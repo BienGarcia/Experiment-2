@@ -1,0 +1,61 @@
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+
+float y,V,z=2.5;
+int x;
+
+cout << "Enter a value for x: ";
+cin >> x;
+
+cout << "Enter a value for y: ";
+cin >> y;
+
+switch(x)
+  {
+	case 1:
+      if (1 < y && y < 5)
+           {
+             V = (x * y * z);
+             cout << "V = xyz = " << setprecision(2) << V;
+             break;
+           }
+                    
+       else if (y >= 5)
+           {
+              V = (x + (y / z));
+              cout << "V = x+ y/z = " << setprecision(2) << V;
+              break;
+            }
+          
+   case 2:
+       if (y <= 5)
+             {
+             V = abs ((x - y) / z);
+             cout << "V = x-y/z =  " << setprecision(2) << V;
+             break;
+             }
+                    
+       else if (y > 5)
+             {
+             V = (x - sqrt(y + z));
+             cout << "V = x - sqrt (y+z) = " << setprecision(2) << V;
+             break;
+             }
+           
+        
+    default: 
+             V = (x + y + z);
+             cout << "V = x+y+z = " << setprecision(2) << V;
+             break;
+    }
+    
+    _getch();
+    return 0;
+}
