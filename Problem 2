@@ -1,0 +1,27 @@
+#include<iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	
+	int x, y;
+	float B, z = 1.10, w = 20;
+	
+	cout<<"Previous Month Consumption: "; 
+  cin >> x;
+	cout<<"Your Recent Consumption: "; 
+  cin >> y;
+	
+	B = 35;
+	B += y * z;
+	if(x> 0)
+  {
+		B += w;
+	}
+	
+	cout << "Your water bill is: "<< B;
+
+  _getch();
+	return 0;
+}
