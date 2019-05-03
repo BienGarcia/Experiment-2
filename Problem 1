@@ -1,0 +1,46 @@
+#include<iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	char p;
+	int h,S;
+
+	cout << “Packages: “ << endl;
+	cout << “Package A: For P995/mo 10 hrs of access are provided. Additional hours are P20/hr. “ << endl;
+	cout << “Package B: For P1495/mo 20 hrs of access are provided. Additional hours are P10/hr. “ << endl;
+	cout << “Package C: For P1995/mo of unlimited access is provided. “ << endl;
+
+	cout<<"Enter Package(A,B,C): "; cin>>p;
+	cout<<"Enter Hours: "; cin>> h;
+	
+	
+	switch(p)
+{
+		case 'A':
+			S = 995;
+			if(h > 10)
+      {
+				S += (h-10 ) * 20;
+			}
+			break;
+		case 'B':
+			S = 1495;
+			if(h > 20)
+      {
+				S += (h - 20 ) * 10;
+			} 	 	
+			break;
+		case 'C':
+			S = 1995;
+			break;
+		default:
+			cout<<"Invalid or Capitalize the letter";
+	}
+	
+	cout <<"Your Bill is: "<< S << endl;
+  
+_getch();
+return 0;	
+}
