@@ -1,0 +1,22 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int n, a;
+	
+	cout << "Enter a number: " ;
+	cin >> n;
+	cout << “Multiplication table of ” << n << “ :” << endl;
+
+	for (a=1; a<=10; a++)
+	{
+		cout << a << " * " << n << " = " << n*a << endl;
+	}
+	
+	
+	_getch();
+	return 0;
+}
