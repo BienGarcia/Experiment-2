@@ -1,0 +1,42 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+    int x, a = 0, b = 1, y;
+
+    cout << "Fibonacci numbers: " << endl;
+
+    for (x = 1; x <= 22; x++)
+    {
+     
+	    
+        if(x == 1)
+        {
+            cout << a << ", ";
+            continue;
+        }
+        if(x == 2)
+        {
+            cout << b ;
+		
+            continue;
+        }
+        
+        
+        y = a + b;
+        a = b;
+        b = y;
+        
+        
+        
+        cout << ", " << y;
+		
+            continue;
+    
+    }
+    
+    _getch() ;
+	return 0;
+}
