@@ -6,22 +6,24 @@ int main()
 {
 	
 	int x, y;
-	float B, z = 1.10, w = 20;
+	float B = 35, z = 1.10, w = 20, m, n;
 	
 	cout<<"Previous Month Consumption: "; 
-  cin >> x;
+  	cin >> x;
 	cout<<"Your Recent Consumption: "; 
-  cin >> y;
+ 	cin >> y;
 	
-	B = 35;
-	B += y * z;
-	if(x> 0)
-  {
-		B += w;
+	m = B +(y * z);
+	n = (B +(y * z)+(w*(y-x));
+	if(x>y)
+  	{
+	cout << "Your water bill is: "<< n;
 	}
-	
-	cout << "Your water bill is: "<< B;
+	else
+	{
+	cout << "Your water bill is: "<< m;
+	}
 
-  _getch();
-	return 0;
+_getch();
+return 0;
 }
