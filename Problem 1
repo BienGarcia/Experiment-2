@@ -17,30 +17,31 @@ int main()
 	
 	
 	switch(p)
-{
-		case 'A':
-			S = 995;
-			if(h > 10)
-      {
-				S += (h-10 ) * 20;
-			}
-			break;
-		case 'B':
-			S = 1495;
-			if(h > 20)
-      {
-				S += (h - 20 ) * 10;
-			} 	 	
-			break;
-		case 'C':
-			S = 1995;
-			break;
+	{
+	case 'A':
+		S = 995;
+		if(h > 10)
+      		{
+		S += (h-10 ) * 20;
+		}
+		break;
+	case 'B':
+		S = 1495;
+		if(h > 20)
+      		{
+		S += (h - 20 ) * 10;
+		} 	 	
+		break;
+	case 'C':
+		S = 1995;
+		break;
 		default:
-			cout<<"Invalid or Capitalize the letter";
+		cout<<"Invalid or Capitalize the letter";
 	}
 	
 	cout <<"Your Bill is: "<< S << endl;
   
 _getch();
 return 0;	
+
 }
